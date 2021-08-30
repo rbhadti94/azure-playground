@@ -70,7 +70,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
     }
     minimumTlsVersion: 'TLS1_2'
     networkAcls: {
-      bypass: 'None'
+      bypass: 'Logging'
       defaultAction: 'Deny'
     }
     routingPreference: {
