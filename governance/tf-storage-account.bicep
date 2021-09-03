@@ -1,7 +1,7 @@
 @minLength(3)
 @maxLength(24)
 param name string = 'tfstatesarbhadti'
-param location string = 'UK South'
+param location string = resourceGroup().location
 param kind string = 'StorageV2'
 param storageSKU string = 'Standard_RAGZRS'
 

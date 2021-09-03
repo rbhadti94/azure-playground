@@ -35,10 +35,6 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
     name: storageSKU
   }
   kind: kind
-  extendedLocation: {
-    name: 'edgezone'
-    type: 'EdgeZone'
-  }
   identity: {
     type: 'SystemAssigned'
   }
