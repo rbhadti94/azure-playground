@@ -54,7 +54,7 @@ jobs:
       - name: Publish Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: governance-${{ github.job }}-${{ github.run_number }}
+          name: governance-${{ github.run_number }}
           path: ${{ env.FOLDER_PATH }}
 
   PlaygroundDeploy:
@@ -67,7 +67,7 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@v2
         with:
-          name: governance-${{ github.job }}-${{ github.run_number }}
+          name: governance-${{ github.run_number }}
 
       - name: Azure Login
         uses: azure/login@v1
